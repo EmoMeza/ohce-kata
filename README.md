@@ -43,6 +43,7 @@ python -m unittest discover tests
 
 ## Esctructura del proyecto
 
+```
 ohce-kata/
 ├── src/
 │   └── ohce.py
