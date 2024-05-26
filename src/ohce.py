@@ -28,3 +28,12 @@ class Ohce:
             return f"Adios {self.name}"
         else:
             return self.process_text(text)
+    
+    def test_empty_input(self):
+        ohce = Ohce(name="Pedro")
+        self.assertEqual(ohce.process_input(""), "")
+
+    def test_input_with_spaces(self):
+        ohce = Ohce(name="Pedro")
+        self.assertEqual(ohce.process_input("   "), "   ")
+
