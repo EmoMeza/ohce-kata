@@ -27,4 +27,4 @@ class Ohce:
         if text == "Stop":
             return f"Adios {self.name}"
         else:
-            return self.reverse_text(text)
+            return self.process_text(text)
