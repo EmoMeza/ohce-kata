@@ -23,7 +23,7 @@ class TestOhce(unittest.TestCase):
 
     def test_palindrome_recognition(self):
         ohce = Ohce(name="Pedro")
-        self.assertEqual(ohce.reverse_text("oto"), "oto\n¡Bonita palabra!")
+        self.assertEqual(ohce.process_text("oto"), "oto\n¡Bonita palabra!")
 
 
 if __name__ == '__main__':

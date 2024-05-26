@@ -15,7 +15,10 @@ class Ohce:
             return f"¡Buenas tardes {self.name}!"
 
     def reverse_text(self, text):
-        reversed_text = text[::-1]
+        return text[::-1]
+
+    def process_text(self, text):
+        reversed_text = self.reverse_text(text)
         if text == reversed_text:
             return f"{reversed_text}\n¡Bonita palabra!"
         return reversed_text
