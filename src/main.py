@@ -15,7 +15,7 @@ def main():
         user_input = input()
         response = ohce.process_input(user_input)
         print(response)
-        if user_input == "Stop":
+        if user_input.lower() == "stop":
             break
 
 if __name__ == "__main__":

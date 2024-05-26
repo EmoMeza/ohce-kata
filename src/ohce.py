@@ -25,7 +25,7 @@ class Ohce:
 
     
     def process_input(self, text):
-        if text == "Stop":
+        if text.lower() == "stop":
             return f"Adios {self.name}"
         elif text.strip() == "":
             return text 
