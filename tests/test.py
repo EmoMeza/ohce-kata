@@ -29,6 +29,14 @@ class TestOhce(unittest.TestCase):
         ohce = Ohce(name="Pedro")
         self.assertEqual(ohce.process_input("Stop"), "Adios Pedro")
 
+    def test_case_insensitive_stop(self):
+        ohce = Ohce(name="Pedro")
+        self.assertEqual(ohce.process_input("Stop"), "Adios Pedro")
+        self.assertEqual(ohce.process_input("STOP"), "Adios Pedro")
+        self.assertEqual(ohce.process_input("stop"), "Adios Pedro")
+        self.assertEqual(ohce.process_input("StoP"), "Adios Pedro")
+
+
 
 
 if __name__ == '__main__':
