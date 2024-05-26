@@ -33,11 +33,15 @@ python -m src.main <nombre>
 
 Reemplaza `<nombre>` con tu nombre.
 
+```
+
 ## Ejecución de pruebas
 
 ```bash
 python -m unittest discover tests
+```
 
+## Esctructura del proyecto
 
 ohce-kata/
 ├── src/
