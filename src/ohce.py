@@ -22,10 +22,13 @@ class Ohce:
         if text == reversed_text:
             return f"{reversed_text}\n¡Bonita palabra!"
         return reversed_text
+
     
     def process_input(self, text):
         if text == "Stop":
             return f"Adios {self.name}"
+        elif text.strip() == "":
+            return text 
         else:
             return self.process_text(text)
     
