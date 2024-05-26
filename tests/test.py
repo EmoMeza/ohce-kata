@@ -16,5 +16,15 @@ class TestOhce(unittest.TestCase):
         ohce = Ohce(name="Pedro", current_time=datetime.strptime("15:00", "%H:%M"))
         self.assertEqual(ohce.greet(), "¡Buenas tardes Pedro!")
 
+    def test_reverse_text(self):
+        ohce = Ohce(name="Pedro")
+        self.assertEqual(ohce.reverse_text("hola"), "aloh")
+        self.assertEqual(ohce.reverse_text("oto"), "oto")
+
+    def test_palindrome_recognition(self):
+        ohce = Ohce(name="Pedro")
+        self.assertEqual(ohce.reverse_text("oto"), "oto\n¡Bonita palabra!")
+
+
 if __name__ == '__main__':
     unittest.main()
