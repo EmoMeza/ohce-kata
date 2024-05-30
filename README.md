@@ -17,9 +17,6 @@ ohce sabe cuándo detenerse, solo tienes que escribir Stop! y él responderá Ad
 ## Instrucciones de instalación
 
 1. Clona el repositorio:
-    ```bash
-    git clone <URL_DEL_REPOSITORIO>
-    ```
 
 2. Instala las dependencias:
     ```bash
